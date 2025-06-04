@@ -1,15 +1,15 @@
-// TIMER
+// TIMER x
 
-// TCCR0A - MODO DE OPERAÇÃO
-// (1 << WGM01) (1 << WGM00) 
+// TCCRxA - MODO DE OPERAÇÃO
+// (1 << WGMx1) (1 << WGMx0) 
 
 // 00 - NORMAL
 // 01 - PWM
 // 10 - CTC (COMPARAÇÃO)
 // 11 - FAST PWM
 
-// TCCR0B - PRESCALER
-// (1 << CS02) (1 << CS01) (1 << CS00)
+// TCCRxB - PRESCALER
+// (1 << CSx2) (1 << CSx1) (1 << CSx0)
 
 // 000 - 0     - 0 Hz       - 0 s
 // 001 - 1     - 16 MHz     - 65,5 ns
@@ -18,8 +18,8 @@
 // 100 - 256   - 62,5 KHz   - 16 us
 // 101 - 1024  - 15,625 KHz - 64 us
 
-// TIMSK0 - MASCARA PARA HABILITAR O TIMER
-// (1 << OCIE0A) - LIGA INTERRUPÇÃO DO COMPARADOR A DO TIMER 0
+// TIMSKx - MASCARA PARA HABILITAR O TIMER
+// (1 << OCIExA) - LIGA INTERRUPÇÃO DO COMPARADOR A DO TIMER x
 
 // I. (Fácil) Elaborar um firmware para criar um cronômetro HH:MM:SS com amostragem na interface
 // sempre que um segundo for contado.
