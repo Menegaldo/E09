@@ -1,9 +1,9 @@
 
-// Timer 0 - 8 bits       | Timer 1 - 16 bits        | Timer 2 - 8 bits
-// -----------------------|--------------------------|------------------------
-// OC0A – pino 6   - PD6  | OC1A – pino 9     - PB1  | OC2A – pino 11  - PB3
-// OC0B – pino 5   - PD5  | OC1B – pino 10    - PB2  | OC2B – pino 3   - PD2
-// 0 a 255                | 0 a 65535                | 0 a 255 
+// Timer 0 - 8 bits         | Timer 1 - 16 bits          | Timer 2 - 8 bits
+// -------------------------|----------------------------|------------------------
+// OC0A – pino 6   - PD6    | OC1A – pino 9     - PB1    | OC2A – pino 11  - PB3
+// OC0B – pino 5   - PD5    | OC1B – pino 10    - PB2    | OC2B – pino 3   - PD2
+// 0 a 255                  | 0 a 65535                  | 0 a 255 
 
 // (1 << WGMx1) | (1 << WGMx0) | TCCRxA
 // -------------|--------------|------------------
